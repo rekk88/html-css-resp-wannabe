@@ -117,7 +117,7 @@ img {
     float: none;
     width: 100%;
   }
-  /* blocco perchè ??????? */
+  /* blocco why ??????? */
   #why .row > .first, #why .row > .second, #why .row > .third {
       /* margin-top: 80px; */
       margin-top: 25px;
@@ -139,11 +139,16 @@ img {
   img{
     height: 170px;
   }
-
+  /* blocco lezioni */
+  #lezioni .right,
+  #lezioni .left{
+    margin: 20px 0;
+  }
   /* blocco steps */
   #steps .row > .left, #steps .row > .central, #steps .row > .right {
     float: none;
-    width: 33%;
+    width: 45%;
+    margin-top: 20px;
   }
 
   #steps .left ,
@@ -152,8 +157,11 @@ img {
   }
   #steps .right{
     margin: 0 auto;
+    width: 55%;
   }
+ 
 
+  /* blocco why ???? */
   #why .row > div.first, 
   #why .row > div.second,
   #why .row > div.third {
