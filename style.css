@@ -125,7 +125,39 @@ img {
 }
 
 @media screen and (min-width:421px) and (max-width:768px) {
-  body{
-    color: red;
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .row{
+    width: 90%;
+  }
+  .row::after{
+    display: none;
+  }
+  img{
+    height: 170px;
+  }
+
+  /* blocco steps */
+  #steps .row > .left, #steps .row > .central, #steps .row > .right {
+    float: none;
+    width: 33%;
+  }
+
+  #steps .left ,
+  #steps .central{
+    display: inline-block;
+  }
+  #steps .right{
+    margin: 0 auto;
+  }
+
+  #why .row > div.first, 
+  #why .row > div.second,
+  #why .row > div.third {
+    margin-top: 40px;
+    
   }
 }
