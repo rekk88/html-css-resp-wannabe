@@ -73,7 +73,48 @@ img {
 }
 
 @media screen and (max-width:420px) {
-  body{
-    color: red;
+  
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
+  .row{
+    width: 90%
+  }
+  .row::after{
+    display: none;
+  }
+  img{
+    height: 130px;
+  }
+
+  #lezioni img,
+  #steps img{
+    margin-top: 30px;
+  }
+
+
+  /*blocco lezioni */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+    width: 100%; /*sovrascrive la regola alla riga 11 -> width:50%*/
+    /* padding: 0px 10px; */
+  }
+
+
+  /* blocco steps */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+
+    float: none;
+    width: 100%;
+  }
+  /* blocco perchè ??????? */
+  #why .row > .first, #why .row > .second, #why .row > .third {
+      /* margin-top: 80px; */
+      margin-top: 25px;
+    }
 }
