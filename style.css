@@ -72,6 +72,8 @@ img {
   clear: both;
 }
 
+
+/* mobile */
 @media screen and (max-width:420px) {
   
   *{
@@ -124,6 +126,8 @@ img {
     }
 }
 
+
+/* tablet */
 @media screen and (min-width:421px) and (max-width:768px) {
   *{
     box-sizing: border-box;
@@ -155,7 +159,7 @@ img {
   #steps .central{
     display: inline-block;
   }
-  #steps .right{
+  #steps .row > .right {
     margin: 0 auto;
     width: 55%;
   }
